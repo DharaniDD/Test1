@@ -23,16 +23,7 @@ contract erc20
               balance[owner]+=amt;
            
           }
-    function deposit(uint256 amt)public returns(uint256)
-    {
-        balance[owner]+=amt;
-        return(balance[owner]);
-    }
-     function withdraw(uint256 amt)public returns(uint256)
-    {
-        balance[owner]-=amt;
-        return(balance[owner]);
-    }
+  
      function transfer(address to,uint256 amt)public returns(uint256,uint256)
     {
         balance[owner]-=amt;
